@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Clicker Game</title>
+</head>
+<body>
+
+  <h1>Clicks: <span id="clicks">0</span></h1>
+  
+  <button id="clickBtn">Click me!</button>
+
+  <script>
+    let clickCount = 0;
+    document.getElementById("clickBtn").onclick = function() {
+      clickCount++;
+      document.getElementById("clicks").innerHTML = clickCount;
+    }
+  </script>
+
+</body>
+</html>
